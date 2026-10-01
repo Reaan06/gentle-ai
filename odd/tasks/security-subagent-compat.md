@@ -24,6 +24,6 @@ Add `gentle-ai-security` subagent compatibility across supported Gentle AI agent
 - Issue: https://github.com/Gentleman-Programming/gentle-ai/issues/5176
 - Delivery strategy: feature-branch chain selected by user. Tracker from `main`; OpenCode child targets tracker; native-agent child targets OpenCode child. Each PR stays below 400 changed lines.
 - Candidate scope: 404 authored diff lines including this feature document (53 tracked changes, 325 new agent assets, 26 document lines before this update); recount each slice before publishing.
-- Commits: pending; record identities and slice boundaries after commit.
-- Verification: focused OpenCode install/sync, native agent tests, model picker tests, and `go build ./...` passed; independent verification pending.
+- Commits: tracker `a0db5bfc7b85d68b23456d9b2d74f12d61c2de70`; OpenCode PR slice `313d5399cc9238a13f69c644045f197a0cadf7c3`; native PR slice `803c0e8494131dbb2918cdb069cb139363d175f7` + formatting `0617968f`.
+- Verification: focused OpenCode install, native agent tests, model picker tests, and `go build ./...` passed. Broad `TestSync` timed out during an external Codex version probe; gofmt initially failed, then was corrected; final focused recheck pending.
 - Issue creation: confirmed read-back from target host; `status:approved` absent. User explicitly requested opening PRs regardless; do not claim the issue policy check is passing.
